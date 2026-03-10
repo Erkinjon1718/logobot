@@ -136,6 +136,7 @@ def main():
     app.add_handler(MessageHandler(filters.Document.IMAGE, handle_document))
 
     print("✅ Bot ishlamoqda... Ctrl+C bilan to'xtatish mumkin.")
+Thread(target=run_server, daemon=True).start()
     app.run_polling()
 
 
