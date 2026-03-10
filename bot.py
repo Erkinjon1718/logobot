@@ -8,7 +8,8 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 # =============================================
 # SOZLAMALAR - bularni o'zgartiring
 # =============================================
-TOKEN = "8763076826:AAET1sm-9kIGWfuh440_wtBBR75Rh9-IHYg"   # BotFather dan olgan token
+import os
+TOKEN = os.environ.get("TOKEN")   # BotFather dan olgan token
 LOGO_PATH = "logo.png"             # Logo fayl nomi (bot.py bilan bir papkada bo'lishi kerak)
 LOGO_SCALE = 0.12                  # Logoning kattaligi: 0.20 = rasmning 15% i
 LOGO_POSITION = "bottom-left"      # Joylashuv: bottom-right | bottom-left | top-right | top-left | center
