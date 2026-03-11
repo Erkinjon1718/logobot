@@ -12,7 +12,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 # =============================================
 TOKEN = os.environ.get("TOKEN")
 LOGO_PATH = "logo.png"
-LOGO_SCALE = 0.12
+LOGO_SCALE = 0.13
 LOGO_POSITION = "bottom-left"
 LOGO_OPACITY = 220
 LOGO_MARGIN = 15
